@@ -1,0 +1,43 @@
+/*cores: 
+    #361ae6
+    #2913ba
+    #1b0d8f
+    #0e0663
+    #000038
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #5737f5;
+}
+
+header {
+    box-shadow: 0px 0px 30px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #0e0663;
+    color: #FFFFFF;
+    padding-bottom: 2svh;
+}
+
+.cheats {
+    width: fit-content;
+}
+
+#content {
+    margin: 13svh 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8vw;
+
+    color: #FFFFFF;
+}
