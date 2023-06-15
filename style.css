@@ -72,3 +72,10 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+.GS {
+    background-image: url(img/gamesense.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
