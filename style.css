@@ -32,7 +32,7 @@ header {
 
 #content {
     font-size: 13pt;
-    margin: 13svh 0 3svh 0;
+    margin: 13svh 1svw 2svh 1svw;
     display: flex;
     flex-direction: row;
     align-items: center;
