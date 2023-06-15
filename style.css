@@ -17,13 +17,19 @@ body {
 header {
     box-shadow: 0px 0px 30px 0px black;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-direction: column;
+    justify-content: center;
     background-color: #0e0663;
     color: #FFFFFF;
-    padding-bottom: 3.5svh;
+    padding-bottom: 2.5svh;
+    padding-top: 1.2svh;
+    padding-left: 1.2svh;
+}
+
+
+header > ul {
+    list-style-type: none;
 }
 
 .sub {
@@ -55,6 +61,7 @@ header {
 }
 
 .buy-button{
+    cursor: pointer;
     background-image: linear-gradient(to right, #09C6F9, #045DE9);
     width: 13svw;
     height: 7svh;
@@ -65,7 +72,6 @@ header {
     font-size: 14pt;
     box-shadow: 0px 10px 10px 0px black;
 }
-
 .NL {
     background-image: url(img/neverlose.jpeg);
     background-repeat: no-repeat;
@@ -78,4 +84,18 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+*::-webkit-scrollbar {
+width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+background: #5737f5;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #02245b;
+border-radius: 10px;
+border: 2px solid #ffffff;
 }
