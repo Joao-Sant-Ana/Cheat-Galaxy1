@@ -49,6 +49,8 @@ header > ul {
 }
 
 .cheats {
+    display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     max-width: 20svw;
     padding: 1svh 1svh 2svh 1svh;
