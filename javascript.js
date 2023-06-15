@@ -34,4 +34,3 @@ Compra_cheats.forEach(cheat => {
     })
 })
 
-
