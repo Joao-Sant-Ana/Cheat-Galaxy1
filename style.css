@@ -24,7 +24,6 @@ header {
     color: #FFFFFF;
     padding-bottom: 2.5svh;
     padding-top: 1.2svh;
-    padding-left: 1.2svh;
 }
 
 
@@ -73,7 +72,31 @@ header > ul {
     border: none;
     font-size: 14pt;
     box-shadow: 0px 10px 10px 0px black;
+    transition: ease-in-out 0.5s;
 }
+
+.buy-button:hover{
+    transform: scale(1.2);
+    /*animation: ChangeBGColor 7s ;*/
+}
+
+/*
+    ================================================================
+           ANIMAÇÃO DE MUDANÇA DE COR,  NÃO FUNCIONAL AINDA!
+    ================================================================
+@keyframes ChangeBGColor {
+    0% {
+        background-color: #001F3F;
+    }
+    50% {
+        background-color: #FF4136;
+    }
+    100% {
+        background-color: #001F3F;
+    }
+}
+*/
+
 .NL {
     background-image: url(img/neverlose.jpeg);
     background-repeat: no-repeat;
@@ -88,16 +111,18 @@ header > ul {
     background-position: center;
 }
 
-*::-webkit-scrollbar {
-width: 13px;
-}
 
-*::-webkit-scrollbar-track {
-background: #5737f5;
+*::-webkit-scrollbar {
+    display: none;
+
 }
 
 *::-webkit-scrollbar-thumb {
-background-color: #02245b;
-border-radius: 10px;
-border: 2px solid #ffffff;
+    background-color: #02245b;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: black;
 }
