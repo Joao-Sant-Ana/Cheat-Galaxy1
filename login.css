@@ -33,8 +33,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin: auto;
     height: 40svh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #login, #register {
@@ -55,6 +58,19 @@ main {
     align-self: center;
     width: 6svw;
     height: 5svh;
+}
+
+#left, #username-regis, #password-regis, #register-btn{
+    z-index: -1;
+    background-color: black;
+    border: none;
+}
+
+.register{
+    border: 2px solid white;
+    position: fixed;
+    background-color: white;
+    border-radius: 15px;
 }
 
 hr {
