@@ -29,13 +29,31 @@ main {
     border-radius: 15px;
 }
 
-#login, #register {
+#left, #right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 40svh;
+}
+
+#login, #register {
+    margin-top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 hr {
+    position: absolute;
     height: 40svh;
     border: 1px solid black;
+}
+
+.login, #login {
+    margin-left: 7%;
+}
+
+.register, #register {
+    margin-right: 7%;
 }

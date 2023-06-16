@@ -1,6 +1,7 @@
 //€
 var Valor_preço_total = 0
-var Mostrar_valor_total = document.getElementById("total_price")
+var quantidade = 0
+var Mostrar_valor_total = document.getElementById("notification")
 var Compra_cheats = Array.from(document.getElementsByClassName("buy-button"))
 
 Compra_cheats.forEach(cheat => {                //adiciona um addEventListener a todos os elementos da classe "buy-button"
@@ -26,8 +27,10 @@ Compra_cheats.forEach(cheat => {                //adiciona um addEventListener a
                     Valor_preço_total += 20
                     break;
         }
-        Mostrar_valor_total.innerHTML = Valor_preço_total + "€"
+        quantidade++
+        Mostrar_valor_total.innerHTML = "Itens: " + quantidade
 
     })
 })
+
 

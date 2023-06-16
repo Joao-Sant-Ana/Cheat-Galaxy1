@@ -57,16 +57,73 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #0e0663;
     color: #FFFFFF;
+    padding-left: 1vw;
+    padding-right: 1vw;
     padding-bottom: 2.5svh;
     padding-top: 1.2svh;
+    min-height: 8vh;
+    max-height: fit-content;
 }
 
 
 header > ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    align-items: center;
+    margin-left: 13%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #09C6F9, #045DE9);
+    max-width: fit-content;
+    min-width: 5svw; 
+    height: 4svh;
+    border-radius: 50px;
+    border: none;
+    font-size: 14pt;
+    box-shadow: 0px 10px 10px 0px black;
+    transition: ease-in-out 0.5s;
+    padding: 2%;
+}
+
+#cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#notification {
+    background-color: white;
+    margin: 0% 0 0% 13%;
+    width: 4svw;
+    text-align: center;
+    border-radius: 10px;
+    color: red;
+    font-size: large;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
 }
 
 .sub {
