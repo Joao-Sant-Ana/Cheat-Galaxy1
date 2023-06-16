@@ -61,9 +61,9 @@ main {
 }
 
 #left, #username-regis, #password-regis, #register-btn{
-    z-index: -1;
     background-color: black;
     border: none;
+    pointer-events: none;
 }
 
 .register{
@@ -71,6 +71,8 @@ main {
     position: fixed;
     background-color: white;
     border-radius: 15px;
+    pointer-events: all;
+    cursor: pointer;
 }
 
 hr {

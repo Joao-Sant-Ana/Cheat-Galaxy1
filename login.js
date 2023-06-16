@@ -11,3 +11,8 @@ var $userRegis = document.getElementById('username-regis')
 var $passRegis = document.getElementById('password-regis')
 var $btnRegis = document.getElementById('btn-regis')
 
+$subLeft.addEventListener('click', clique)
+
+function clique() {
+    
+}
