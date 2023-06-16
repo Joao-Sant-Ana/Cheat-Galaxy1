@@ -24,7 +24,6 @@ main {
     min-width: 25svw;
     max-height: fit-content;
     min-height: 40svh;
-    gap: 50px;
     box-shadow: 0px 10px 20px 0px black;
     border-radius: 15px;
 }
@@ -34,26 +33,32 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     height: 40svh;
 }
 
 #login, #register {
-    margin-top: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    min-width: fit-content;
+}
+
+#username-login, #password-login, #username-regis, #password-regis {
+    height: 4svh;
+    border-radius: 8px;
+}
+
+#login-btn, #register-btn {
+    align-self: center;
+    width: 6svw;
+    height: 5svh;
 }
 
 hr {
     position: absolute;
     height: 40svh;
     border: 1px solid black;
-}
-
-.login, #login {
-    margin-left: 7%;
-}
-
-.register, #register {
-    margin-right: 7%;
 }
