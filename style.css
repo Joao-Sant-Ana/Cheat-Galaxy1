@@ -10,6 +10,44 @@
     margin: 0;
 }
 
+
+@media only screen and (max-width: 940px){
+    #content {
+        display: flex;
+        min-width: 100svw;
+    }
+    .cheats {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    .cheats {
+        min-width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buy-button {
+        min-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    #content {
+        display: flex;
+        min-width: 100svw;
+    }
+    .cheats {
+        min-width: 70%;
+    }
+}
+
+
 body {
     background-color: #5737f5;
 }
@@ -39,7 +77,6 @@ header > ul {
     font-size: 13pt;
     margin: 13svh 1svw 2svh 1svw;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -50,7 +87,6 @@ header > ul {
 .cheats {
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
     max-width: 20svw;
     padding: 1svh 1svh 2svh 1svh;
     box-shadow: 0px 10px 20px 0px black;
@@ -62,11 +98,11 @@ header > ul {
 }
 
 .buy-button{
+    margin: auto;
     cursor: pointer;
     background-image: linear-gradient(to right, #09C6F9, #045DE9);
     width: 13svw;
     height: 7svh;
-    margin-left: 3.4svw;
     margin-top: 1svh;
     border-radius: 50px;
     border: none;
@@ -112,6 +148,8 @@ header > ul {
 }
 
 
+
+
 *::-webkit-scrollbar {
     display: none;
 
@@ -126,3 +164,4 @@ header > ul {
 *::-webkit-scrollbar-thumb:hover {
     background-color: black;
 }
+
