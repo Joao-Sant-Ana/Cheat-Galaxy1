@@ -64,9 +64,10 @@ main {
     background-color: black;
     border: none;
     pointer-events: none;
+    animation-name: goUp;
 }
 
-.register{
+#txtregister{
     border: 2px solid white;
     position: fixed;
     background-color: white;
@@ -79,4 +80,14 @@ hr {
     position: absolute;
     height: 40svh;
     border: 1px solid black;
+}
+
+@keyframes goUp {
+    0% {
+        transform:translatey(0svh);
+
+    }
+    100% {
+        transform:translatey(-18.3svh);
+    }
 }
