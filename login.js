@@ -18,8 +18,7 @@ function clique() {
     $registext.style.border = 'none'
     $registext.style.transition = '2s'
     $registext.style.transform = 'translatey(0px)'
-    $registext.style.animation = 'goUp 3s'
     setTimeout(() => {
-        $registext.style.position = 'static'
-    }, 3000)
+        $registext.style.marginTop = '0'+'%'
+    }, 1)
 }

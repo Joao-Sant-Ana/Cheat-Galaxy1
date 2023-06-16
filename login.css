@@ -69,7 +69,7 @@ main {
 
 #txtregister{
     border: 2px solid white;
-    position: fixed;
+    margin-top: 69.5%;
     background-color: white;
     border-radius: 15px;
     pointer-events: all;
@@ -80,14 +80,4 @@ hr {
     position: absolute;
     height: 40svh;
     border: 1px solid black;
-}
-
-@keyframes goUp {
-    0% {
-        transform:translatey(0svh);
-
-    }
-    100% {
-        transform:translatey(-18.3svh);
-    }
 }
