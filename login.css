@@ -6,6 +6,50 @@
     #000038
 */
 
+@media only screen and (max-width: 940px) {
+    #login, #register{
+        margin: auto;
+        width: 45svw;
+        height: 10svh;
+    }
+    #username-login, #password-login, #username-regis, #password-regis {
+        height: 2svh;
+        width: 40svw;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #username-regis, #password-regis, #register-btn {
+        background-color: transparent;
+        border: none;
+        pointer-events: none;
+    }
+
+    #login, #register{
+        margin: auto;
+        width: 45svw;
+        height: 10svh;
+    }
+    #username-login, #password-login, #username-regis, #password-regis {
+        width: 40svw;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #login, #register{
+        margin: auto;
+        width: 45svw;
+        height: 10svh;
+    }
+    #username-login, #password-login, #username-regis, #password-regis {
+        height: 2svh;
+        width: 40svw;
+        margin: auto;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +62,10 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    max-width: fit-content;
-    min-width: 25svw;
-    max-height: fit-content;
-    min-height: 40svh;
+    min-width: fit-content;
+    min-height: fit-content;
+    height: 50svh;
+    width: 20svw;
     box-shadow: 0px 10px 20px 0px black;
     border-radius: 15px;
 }
@@ -33,7 +77,7 @@ main {
     align-items: center;
     width: 100%;
     margin: auto;
-    height: 40svh;
+    height: 100%;
 }
 
 #left {
@@ -67,25 +111,31 @@ main {
     width: 6svw;
     height: 5svh;
     cursor: pointer;
+    min-width: fit-content;
 }
 
 #login-btn:hover {
     background-color: rgb(99, 99, 99);
 }
 
-#left, #username-regis, #password-regis, #register-btn{
+#left, #username-regis, #password-regis, #register-btn {
     background-color: black;
     border: none;
     pointer-events: none;
 }
 
-#txtregister{
-    margin-top: 69.5%;
+#username-regis, #password-regis, #register-btn {
+    background-color: transparent;
+    color: transparent;
+}
+
+#txtregister {
+    margin-top: 67%;
     background-color: black;
     color: white;
     border-radius: 15px;
     pointer-events: all;
-    cursor: pointer ;
+    cursor: pointer;
 }
 
 #txtlogin {
@@ -93,7 +143,7 @@ main {
 }
 
 ::placeholder {
-    color:black;
-    font-size: 8pt;
+    color: black;
+    font-size: 10pt;
     margin-bottom: 20%;
 }
