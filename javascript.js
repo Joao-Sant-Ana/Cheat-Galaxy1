@@ -7,6 +7,7 @@ var Compra_cheats = Array.from(document.getElementsByClassName("buy-button"))
 Compra_cheats.forEach(cheat => {                //adiciona um addEventListener a todos os elementos da classe "buy-button"
     cheat.addEventListener("click", () => {
         var nome_cheat = cheat.classList[1];    //usando index, acaba retornando o nome da segunda class do elemento
+        var notification = document.getElementById("notification").style.display = "block";
         switch (nome_cheat) {
             case "OT2-button":
                 Valor_preço_total += 5
