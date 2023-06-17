@@ -93,7 +93,7 @@ function leftClick() {
     $passLogin.style.border = 'none'
     $passLogin.style.pointerEvents = 'none'
 
-    $btnLogin.style.transition = '1.3s'
+    $btnLogin.style.transition = '1.5s'
     $btnLogin.style.backgroundColor = 'black'
     $btnLogin.style.border = 'none'
     $btnLogin.style.color = 'transparent'
@@ -135,7 +135,7 @@ function rightClick() {
     $passLogin.style.border = '1px solid black'
     $passLogin.style.pointerEvents = 'none'
 
-    $btnLogin.style.transition = '.01s'
+    $btnLogin.style.transition = '1.5s'
     $btnLogin.style.border = '1px solid black'
     $btnLogin.style.backgroundColor = 'grey'
     $btnLogin.style.color = 'black'
@@ -182,7 +182,7 @@ function rightClick() {
     $passRegis.style.border = 'none'
     $passRegis.style.pointerEvents = 'none'
 
-    $btnRegis.style.transition = '1.4s'
+    $btnRegis.style.transition = '1.5s'
     $btnRegis.style.backgroundColor = 'black'
     $btnRegis.style.border = 'none'
     $btnRegis.style.cursor = 'default'
