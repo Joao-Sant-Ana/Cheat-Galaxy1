@@ -134,40 +134,40 @@ function rightClick() {
 
     //DIREITA\\
 
-    $right.style.pointerEvents = 'none'
+    $right.style.pointerEvents = 'all'
 
     //Animação da cor direita\\
 
     $right.style.transitionDuration = '1s'
-    $right.style.backgroundColor = 'black'
+    $right.style.backgroundColor = 'white'
 
     //Animação do texto subindo direita\\
 
     $logtext.style.transition = '2s'
-    $logtext.style.marginTop = '62'+'%'
-    $logtext.style.border = '2px solid black'
-    $logtext.style.color = 'white'
-    $logtext.style.backgroundColor = 'black'
-    $logtext.style.borderRadius = '15'+'px'
-    $logtext.style.cursor = 'pointer'
-    $logtext.style.pointerEvents = 'all'
+    $logtext.style.marginTop = '0'+'%'
+    $logtext.style.border = 'none'
+    $logtext.style.color = 'black'
+    $logtext.style.backgroundColor = 'white'
+    $logtext.style.borderRadius = '0'+'px'
+    $logtext.style.cursor = 'default'
+    $logtext.style.pointerEvents = 'none'
 
     //Animação dos inputs direita\\
 
     $userLogin.style.transition = '1.5s'
-    $userLogin.style.backgroundColor = 'black'
-    $userLogin.style.border = 'none'
+    $userLogin.style.backgroundColor = 'white'
+    $userLogin.style.border = '1px solid black'
     $userLogin.style.pointerEvents = 'none'
 
     $passLogin.style.transition = '1.5s'
-    $passLogin.style.backgroundColor = 'black'
-    $passLogin.style.border = 'none'
+    $passLogin.style.backgroundColor = 'white'
+    $passLogin.style.border = '1px solid black'
     $passLogin.style.pointerEvents = 'none'
 
     $btnLogin.style.transition = '1.5s'
     $btnLogin.style.backgroundColor = 'black'
-    $btnLogin.style.border = 'none'
-    $btnLogin.style.backgroundColor = 'black'
-    $btnLogin.style.cursor = 'none'
-    $btnLogin.style.pointerEvents = 'none'
+    $btnLogin.style.border = '1px solid black'
+    $btnLogin.style.backgroundColor = 'grey'
+    $btnLogin.style.cursor = 'pointer'
+    $btnLogin.style.pointerEvents = 'all'
 }

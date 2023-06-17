@@ -83,7 +83,11 @@ main {
     transition: 0.5s;
 }
 
-#txtregister:hover {
+#logtext {
+    transition: 0.5s;
+}
+
+#txtregister:hover, #logtext:hover {
     border: 2px solid white;
     background-color: white;
     color: black;
