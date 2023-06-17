@@ -22,6 +22,14 @@
 }
 
 @media only screen and (max-width: 768px){
+
+    .account {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
     #content {
         display: flex;
         flex-direction: column;
@@ -38,6 +46,11 @@
 }
 
 @media only screen and (max-width: 300px){
+
+    header > ul {
+        margin-left: 0% !important;
+    }
+
     #content {
         display: flex;
         min-width: 100svw;
@@ -74,7 +87,7 @@ header > ul {
     flex-direction: column;
     list-style-type: none;
     align-items: center;
-    margin-left: 13%;
+    margin-left: 19%;
 }
 
 a {
@@ -85,15 +98,13 @@ a {
 button {
     cursor: pointer;
     background-image: linear-gradient(to right, #09C6F9, #045DE9);
-    max-width: fit-content;
-    min-width: 5svw; 
-    height: 4svh;
+    min-width: 7svw; 
+    height: 5svh;
     border-radius: 50px;
     border: none;
     font-size: 14pt;
     box-shadow: 0px 10px 10px 0px black;
     transition: ease-in-out 0.5s;
-    padding: 2%;
 }
 
 #cart {
@@ -105,19 +116,19 @@ button {
 #notification {
     background-color: white;
     margin: 0% 0 0% 13%;
-    width: 4svw;
+    padding: 1.5%;
     text-align: center;
     border-radius: 10px;
     color: red;
     font-size: large;
+    display: none;
 }
 
 #buttons {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-
 
 .account {
     display: flex;
@@ -125,6 +136,7 @@ button {
     gap: 20px;
 
 }
+
 
 .sub {
     margin-top: 2.8svh;
@@ -186,8 +198,33 @@ button {
     background-position: center;
 }
 
+.AW {
+    background-image: url(img/aimware.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.OT4 {
+    background-image: url(img/Onetap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.OT3 {
+    background-image: url(img/OnetapV3.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.OT2 {
+    background-image: url(img/onteapV2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 *::-webkit-scrollbar {
     display: none;
