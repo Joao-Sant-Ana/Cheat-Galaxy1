@@ -88,11 +88,3 @@ main {
     pointer-events: all;
     cursor: pointer ;
 }
-
-hr {
-    position: absolute;
-    height: 40svh;
-    border: 1px solid black;
-}
-
-
