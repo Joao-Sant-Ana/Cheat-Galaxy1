@@ -61,9 +61,16 @@ main {
 }
 
 #login-btn, #register-btn {
+    background-color: grey;
+    border: 1px solid black;
     align-self: center;
     width: 6svw;
     height: 5svh;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: rgb(99, 99, 99);
 }
 
 #left, #username-regis, #password-regis, #register-btn{

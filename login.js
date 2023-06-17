@@ -11,13 +11,12 @@ var $userRegis = document.getElementById('username-regis')
 var $passRegis = document.getElementById('password-regis')
 var $btnRegis = document.getElementById('register-btn')
 
-var n = 0
-
 $registext.addEventListener('click', leftClick)
 $logtext.addEventListener('click', rightClick)
 
+
+//Função de clique em REGISTER\\
 function leftClick() {
-    n += 1
     //ESQUERDA\\
 
     $left.style.pointerEvents = 'all'
@@ -54,6 +53,16 @@ function leftClick() {
     $btnRegis.style.backgroundColor = 'Grey'
     $btnRegis.style.cursor = 'pointer'
     $btnRegis.style.pointerEvents = 'all'
+
+    //Mudar cor do botão de registro\\
+    $btnRegis.addEventListener('mouseenter', () => {
+        $btnRegis.style.transition = '.5s'
+        $btnRegis.style.backgroundColor = 'rgb(99, 99, 99)'
+    })
+    $btnRegis.addEventListener('mouseout', () => {
+        $btnRegis.style.transition = '.5s'
+        $btnRegis.style.backgroundColor = 'grey'
+    })
 
     //DIREITA\\
 
@@ -92,10 +101,11 @@ function leftClick() {
     $btnLogin.style.backgroundColor = 'transparent'
     $btnLogin.style.cursor = 'none'
     $btnLogin.style.pointerEvents = 'none'
+
 }
 
+//Função de clique em LOGIN\\
 function rightClick() {
-    n += -1
     //DIREITA\\
 
     $right.style.pointerEvents = 'all'
@@ -133,6 +143,16 @@ function rightClick() {
     $btnLogin.style.cursor = 'pointer'
     $btnLogin.style.pointerEvents = 'all'
 
+    //Mudar cor do botão de registro\\
+    $btnLogin.addEventListener('mouseenter', () => {
+        $btnLogin.style.transition = '.5s'
+        $btnLogin.style.backgroundColor = 'rgb(99, 99, 99)'
+    })
+    $btnLogin.addEventListener('mouseout', () => {
+        $btnLogin.style.transition = '.5s'
+        $btnLogin.style.backgroundColor = 'grey'
+    })
+
     //ESQUERDA\\
 
     $left.style.pointerEvents = 'none'
@@ -168,5 +188,4 @@ function rightClick() {
     $btnRegis.style.border = 'none'
     $btnRegis.style.cursor = 'default'
     $btnRegis.style.pointerEvents = 'none'
-
 }
