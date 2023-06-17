@@ -80,11 +80,14 @@ main {
 }
 
 #txtregister{
-    border: 2px solid black;
     margin-top: 69.5%;
     background-color: black;
     color: white;
     border-radius: 15px;
     pointer-events: all;
     cursor: pointer ;
+}
+
+#txtlogin {
+    background-color: white;
 }

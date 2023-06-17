@@ -30,7 +30,6 @@ function leftClick() {
 
     $registext.style.transition = '1.5s'
     $registext.style.marginTop = '0' + '%'
-    $registext.style.border = '2px solid white'
     $registext.style.color = 'black'
     $registext.style.backgroundColor = 'white'
     $registext.style.cursor = 'default'
