@@ -91,3 +91,9 @@ main {
 #txtlogin {
     background-color: white;
 }
+
+::placeholder {
+    color:black;
+    font-size: 8pt;
+    margin-bottom: 20%;
+}

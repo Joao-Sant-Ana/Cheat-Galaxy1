@@ -191,3 +191,4 @@ function rightClick() {
     $btnRegis.style.cursor = 'none'
     $btnRegis.style.pointerEvents = 'none'
 }
+  
