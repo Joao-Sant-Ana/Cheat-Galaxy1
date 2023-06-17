@@ -80,17 +80,6 @@ main {
     border-radius: 15px;
     pointer-events: all;
     cursor: pointer ;
-    transition: 0.5s;
-}
-
-#logtext {
-    transition: 0.5s;
-}
-
-#txtregister:hover, #logtext:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: black;
 }
 
 hr {

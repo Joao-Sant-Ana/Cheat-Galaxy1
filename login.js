@@ -11,11 +11,13 @@ var $userRegis = document.getElementById('username-regis')
 var $passRegis = document.getElementById('password-regis')
 var $btnRegis = document.getElementById('register-btn')
 
+var n = 0
+
 $registext.addEventListener('click', leftClick)
 $logtext.addEventListener('click', rightClick)
 
 function leftClick() {
-
+    n += 1
     //ESQUERDA\\
 
     $left.style.pointerEvents = 'all'
@@ -66,10 +68,8 @@ function leftClick() {
 
     $logtext.style.transition = '1.5s'
     $logtext.style.marginTop = '62' + '%'
-    $logtext.style.border = '2px solid black'
     $logtext.style.color = 'white'
     $logtext.style.backgroundColor = 'black'
-    $logtext.style.borderRadius = '15' + 'px'
     $logtext.style.cursor = 'pointer'
     $logtext.style.pointerEvents = 'all'
 
@@ -95,7 +95,7 @@ function leftClick() {
 }
 
 function rightClick() {
-
+    n += -1
     //DIREITA\\
 
     $right.style.pointerEvents = 'all'
@@ -109,10 +109,8 @@ function rightClick() {
 
     $logtext.style.transition = '1.5s'
     $logtext.style.marginTop = '0' + '%'
-    $logtext.style.border = 'none'
     $logtext.style.color = 'black'
     $logtext.style.backgroundColor = 'white'
-    $logtext.style.borderRadius = '0' + 'px'
     $logtext.style.cursor = 'default'
     $logtext.style.pointerEvents = 'none'
 
