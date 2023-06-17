@@ -35,6 +35,9 @@
         width: 40svw;
         margin: auto;
     }
+    #txtregister {
+
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -65,7 +68,7 @@ main {
     min-width: fit-content;
     min-height: fit-content;
     height: 50svh;
-    width: 20svw;
+    width: 30svw;
     box-shadow: 0px 10px 20px 0px black;
     border-radius: 15px;
 }
