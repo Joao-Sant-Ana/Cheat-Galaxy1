@@ -19,7 +19,7 @@ function leftClick() {
     //ESQUERDA\\
 
     $left.style.pointerEvents = 'all'
-    
+
     //Animação da cor esquerda\\
 
     $left.style.transitionDuration = '1.5s'
@@ -28,7 +28,7 @@ function leftClick() {
     //Animação do texto subindo esquerda\\
 
     $registext.style.transition = '1.5s'
-    $registext.style.marginTop = '0'+'%'
+    $registext.style.marginTop = '0' + '%'
     $registext.style.border = '2px solid white'
     $registext.style.color = 'black'
     $registext.style.backgroundColor = 'white'
@@ -59,17 +59,17 @@ function leftClick() {
 
     //Animação da cor direita\\
 
-    $right.style.transitionDuration = '1s'
+    $right.style.transitionDuration = '1.5s'
     $right.style.backgroundColor = 'black'
 
     //Animação do texto subindo direita\\
 
-    $logtext.style.transition = '2s'
-    $logtext.style.marginTop = '62'+'%'
+    $logtext.style.transition = '1.5s'
+    $logtext.style.marginTop = '62' + '%'
     $logtext.style.border = '2px solid black'
     $logtext.style.color = 'white'
     $logtext.style.backgroundColor = 'black'
-    $logtext.style.borderRadius = '15'+'px'
+    $logtext.style.borderRadius = '15' + 'px'
     $logtext.style.cursor = 'pointer'
     $logtext.style.pointerEvents = 'all'
 
@@ -85,20 +85,60 @@ function leftClick() {
     $passLogin.style.border = 'none'
     $passLogin.style.pointerEvents = 'none'
 
-    $btnLogin.style.transition = '1.5s'
+    $btnLogin.style.transition = '1.3s'
     $btnLogin.style.backgroundColor = 'black'
     $btnLogin.style.border = 'none'
-    $btnLogin.style.backgroundColor = 'black'
+    $btnLogin.style.color = 'transparent'
+    $btnLogin.style.backgroundColor = 'transparent'
     $btnLogin.style.cursor = 'none'
     $btnLogin.style.pointerEvents = 'none'
 }
 
 function rightClick() {
-    
+
+    //DIREITA\\
+
+    $right.style.pointerEvents = 'all'
+
+    //Animação da cor direita\\
+
+    $right.style.transitionDuration = '1.5s'
+    $right.style.backgroundColor = 'white'
+
+    //Animação do texto subindo direita\\
+
+    $logtext.style.transition = '1.5s'
+    $logtext.style.marginTop = '0' + '%'
+    $logtext.style.border = 'none'
+    $logtext.style.color = 'black'
+    $logtext.style.backgroundColor = 'white'
+    $logtext.style.borderRadius = '0' + 'px'
+    $logtext.style.cursor = 'default'
+    $logtext.style.pointerEvents = 'none'
+
+    //Animação dos inputs direita\\
+
+    $userLogin.style.transition = '1.5s'
+    $userLogin.style.backgroundColor = 'white'
+    $userLogin.style.border = '1px solid black'
+    $userLogin.style.pointerEvents = 'none'
+
+    $passLogin.style.transition = '1.5s'
+    $passLogin.style.backgroundColor = 'white'
+    $passLogin.style.border = '1px solid black'
+    $passLogin.style.pointerEvents = 'none'
+
+    $btnLogin.style.transition = '.01s'
+    $btnLogin.style.border = '1px solid black'
+    $btnLogin.style.backgroundColor = 'grey'
+    $btnLogin.style.color = 'black'
+    $btnLogin.style.cursor = 'pointer'
+    $btnLogin.style.pointerEvents = 'all'
+
     //ESQUERDA\\
 
     $left.style.pointerEvents = 'none'
-    
+
     //Animação da cor esquerda\\
 
     $left.style.transitionDuration = '1.5s'
@@ -107,7 +147,7 @@ function rightClick() {
     //Animação do texto subindo esquerda\\
 
     $registext.style.transition = '1.5s'
-    $registext.style.marginTop = '69.5'+'%'
+    $registext.style.marginTop = '69.5' + '%'
     $registext.style.border = 'none'
     $registext.style.color = 'white'
     $registext.style.backgroundColor = 'black'
@@ -125,49 +165,10 @@ function rightClick() {
     $passRegis.style.border = 'none'
     $passRegis.style.pointerEvents = 'none'
 
-    $btnRegis.style.transition = '1.5s'
+    $btnRegis.style.transition = '1.4s'
     $btnRegis.style.backgroundColor = 'black'
     $btnRegis.style.border = 'none'
-    $btnRegis.style.backgroundColor = 'black'
     $btnRegis.style.cursor = 'default'
     $btnRegis.style.pointerEvents = 'none'
 
-    //DIREITA\\
-
-    $right.style.pointerEvents = 'all'
-
-    //Animação da cor direita\\
-
-    $right.style.transitionDuration = '1s'
-    $right.style.backgroundColor = 'white'
-
-    //Animação do texto subindo direita\\
-
-    $logtext.style.transition = '2s'
-    $logtext.style.marginTop = '0'+'%'
-    $logtext.style.border = 'none'
-    $logtext.style.color = 'black'
-    $logtext.style.backgroundColor = 'white'
-    $logtext.style.borderRadius = '0'+'px'
-    $logtext.style.cursor = 'default'
-    $logtext.style.pointerEvents = 'none'
-
-    //Animação dos inputs direita\\
-
-    $userLogin.style.transition = '1.5s'
-    $userLogin.style.backgroundColor = 'white'
-    $userLogin.style.border = '1px solid black'
-    $userLogin.style.pointerEvents = 'none'
-
-    $passLogin.style.transition = '1.5s'
-    $passLogin.style.backgroundColor = 'white'
-    $passLogin.style.border = '1px solid black'
-    $passLogin.style.pointerEvents = 'none'
-
-    $btnLogin.style.transition = '1.5s'
-    $btnLogin.style.backgroundColor = 'black'
-    $btnLogin.style.border = '1px solid black'
-    $btnLogin.style.backgroundColor = 'grey'
-    $btnLogin.style.cursor = 'pointer'
-    $btnLogin.style.pointerEvents = 'all'
 }
