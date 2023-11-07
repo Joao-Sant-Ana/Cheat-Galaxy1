@@ -1,3 +1,4 @@
+//Variaveis
 var $right = document.getElementById('right')
 var $left = document.getElementById('left')
 var $registext = document.getElementById('txtregister')
