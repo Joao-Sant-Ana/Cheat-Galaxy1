@@ -10,6 +10,57 @@
     margin: 0;
 }
 
+
+@media only screen and (max-width: 940px){
+    #content {
+        display: flex;
+        min-width: 100svw;
+    }
+    .cheats {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .account {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    .cheats {
+        min-width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buy-button {
+        min-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+
+    header > ul {
+        margin-left: 0% !important;
+    }
+
+    #content {
+        display: flex;
+        min-width: 100svw;
+    }
+    .cheats {
+        min-width: 70%;
+    }
+}
+
+
 body {
     background-color: #5737f5;
 }
@@ -19,18 +70,73 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #0e0663;
     color: #FFFFFF;
+    padding-left: 1vw;
+    padding-right: 1vw;
     padding-bottom: 2.5svh;
     padding-top: 1.2svh;
-    padding-left: 1.2svh;
+    min-height: 8vh;
+    max-height: fit-content;
 }
 
 
 header > ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    align-items: center;
+    margin-left: 19%;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #09C6F9, #045DE9);
+    min-width: 7svw; 
+    height: 5svh;
+    border-radius: 50px;
+    border: none;
+    font-size: 14pt;
+    box-shadow: 0px 10px 10px 0px black;
+    transition: ease-in-out 0.5s;
+}
+
+#cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#notification {
+    background-color: white;
+    margin: 0% 0 0% 13%;
+    padding: 1.5%;
+    text-align: center;
+    border-radius: 10px;
+    color: red;
+    font-size: large;
+    display: none;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
 
 .sub {
     margin-top: 2.8svh;
@@ -40,7 +146,6 @@ header > ul {
     font-size: 13pt;
     margin: 13svh 1svw 2svh 1svw;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,7 +154,8 @@ header > ul {
 }
 
 .cheats {
-    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 20svw;
     padding: 1svh 1svh 2svh 1svh;
     box-shadow: 0px 10px 20px 0px black;
@@ -61,17 +167,23 @@ header > ul {
 }
 
 .buy-button{
+    margin: auto;
     cursor: pointer;
     background-image: linear-gradient(to right, #09C6F9, #045DE9);
     width: 13svw;
     height: 7svh;
-    margin-left: 3.4svw;
     margin-top: 1svh;
     border-radius: 50px;
     border: none;
     font-size: 14pt;
     box-shadow: 0px 10px 10px 0px black;
+    transition: ease-in-out 0.5s;
 }
+
+.buy-button:hover{
+    transform: scale(1.2);
+}
+
 .NL {
     background-image: url(img/neverlose.jpeg);
     background-repeat: no-repeat;
@@ -86,16 +198,46 @@ header > ul {
     background-position: center;
 }
 
-*::-webkit-scrollbar {
-width: 13px;
+.AW {
+    background-image: url(img/aimware.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-*::-webkit-scrollbar-track {
-background: #5737f5;
+.OT4 {
+    background-image: url(img/Onetap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.OT3 {
+    background-image: url(img/OnetapV3.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.OT2 {
+    background-image: url(img/onteapV2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+
 }
 
 *::-webkit-scrollbar-thumb {
-background-color: #02245b;
-border-radius: 10px;
-border: 2px solid #ffffff;
+    background-color: #02245b;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
 }
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+

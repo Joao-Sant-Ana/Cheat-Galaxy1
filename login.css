@@ -1,0 +1,152 @@
+/*cores: 
+    #361ae6
+    #2913ba
+    #1b0d8f
+    #0e0663
+    #000038
+*/
+
+@media only screen and (max-width: 940px) {
+    #login, #register{
+        margin: auto;
+        width: 45svw;
+        height: 10svh;
+    }
+    #username-login, #password-login, #username-regis, #password-regis {
+        height: 2svh;
+        width: 40svw;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #username-regis, #password-regis, #register-btn {
+        background-color: transparent;
+        border: none;
+        pointer-events: none;
+    }
+
+    #login, #register{
+        margin: auto;
+        width: 45svw;
+        height: 10svh;
+    }
+    #username-login, #password-login, #username-regis, #password-regis {
+        width: 40svw;
+        margin: auto;
+    }
+    #txtregister {
+
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #login, #register{
+        margin: auto;
+        width: 45svw;
+        height: 10svh;
+    }
+    #username-login, #password-login, #username-regis, #password-regis {
+        height: 2svh;
+        width: 40svw;
+        margin: auto;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    min-width: fit-content;
+    min-height: fit-content;
+    height: 50svh;
+    width: 30svw;
+    box-shadow: 0px 10px 20px 0px black;
+    border-radius: 15px;
+}
+
+#left, #right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+#left {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#login, #register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    min-width: fit-content;
+}
+
+#username-login, #password-login, #username-regis, #password-regis {
+    height: 4svh;
+    border-radius: 8px;
+}
+
+#login-btn, #register-btn {
+    background-color: grey;
+    border: 1px solid black;
+    align-self: center;
+    width: 6svw;
+    height: 5svh;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+#login-btn:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+#left, #username-regis, #password-regis, #register-btn {
+    background-color: black;
+    border: none;
+    pointer-events: none;
+}
+
+#username-regis, #password-regis, #register-btn {
+    background-color: transparent;
+    color: transparent;
+}
+
+#txtregister {
+    margin-top: 67%;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+#txtlogin {
+    background-color: white;
+}
+
+::placeholder {
+    color: black;
+    font-size: 10pt;
+    margin-bottom: 20%;
+}
